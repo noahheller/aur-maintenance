@@ -1,5 +1,5 @@
 pkgbase = advantagescope-git
-	pkgdesc = UNOFFICIAL build of advantage scope by FRC team 6328
+	pkgdesc = robot diagnostics, log review/analysis, and data visualization application tool
 	pkgver = r1232.73e92df
 	pkgrel = 1
 	url = https://github.com/Mechanical-Advantage/AdvantageScope.git
