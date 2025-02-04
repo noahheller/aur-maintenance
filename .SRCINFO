@@ -37,6 +37,7 @@ pkgbase = advantagescope-git
 	depends = libdrm
 	depends = libxcomposite
 	depends = hicolor-icon-theme
+	conflicts = advantagescope
 	source = git+https://github.com/Mechanical-Advantage/AdvantageScope.git
 	sha256sums = SKIP
 
