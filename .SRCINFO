@@ -37,6 +37,7 @@ pkgbase = advantagescope
 	provides = libffmpeg.so
 	provides = libvk_swiftshader.so
 	provides = libvulkan.so
+	conflicts = advantagescope-git
 	source = https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v4.1.2/advantagescope-linux-x64-v4.1.2.pacman
 	sha256sums = SKIP
 
