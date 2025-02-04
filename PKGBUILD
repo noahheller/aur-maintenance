@@ -5,7 +5,7 @@
 
 # Maintainer: Noah Heller <softwareenginer@pm.me>
 pkgname=advantagescope-git
-pkgver=4.1.2
+pkgver=r1232.73e92df
 pkgrel=1
 epoch=
 pkgdesc="UNOFFICIAL build of advantage scope by FRC team 6328"
@@ -29,6 +29,13 @@ noextract=()
 sha256sums=('SKIP')
 validpgpkeys=()
 
+pkgver(){
+	cd "AdvantageScope"
+	( set -o pipefail
+    git describe --long --abbrev=7 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+  )
+}
 build() {
 	cd AdvantageScope
 	sudo /usr/lib/emsdk/emsdk install latest
