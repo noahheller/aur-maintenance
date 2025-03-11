@@ -5,7 +5,7 @@
 
 # Maintainer: Noah Heller <softwareenginer at pm dot me>
 pkgname=advantagescope
-pkgver=4.1.2
+pkgver=4.1.4
 pkgrel=1
 epoch=
 pkgdesc="robot diagnostics, log review/analysis, and data visualization application tool"
@@ -32,13 +32,13 @@ validpgpkeys=()
 
 build() {
   tar xvf $pkgname-linux-x64-v$pkgver.pacman
-	curl -OL https://raw.githubusercontent.com/Mechanical-Advantage/AdvantageScope/refs/heads/main/LICENSE
+  curl -OL https://raw.githubusercontent.com/Mechanical-Advantage/AdvantageScope/refs/heads/main/LICENSE
 }
-package(){
+package() {
   cp -rf opt "$pkgdir"
   cp -rf usr "$pkgdir"
-	mkdir -p "$pkgdir/usr/bin"
+  mkdir -p "$pkgdir/usr/bin"
   ln -s "/opt/AdvantageScope/$pkgname" "$pkgdir/usr/bin/$pkgname"
-	install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/$pkgname/LICENSE"
 
 }
