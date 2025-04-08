@@ -5,7 +5,7 @@
 
 # Maintainer: Noah Heller <softwareenginer at pm dot me>
 pkgname=advantagescope
-pkgver=4.1.5
+pkgver=4.1.6
 pkgrel=1
 epoch=
 pkgdesc="robot diagnostics, log review/analysis, and data visualization application tool"

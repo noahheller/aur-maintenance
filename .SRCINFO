@@ -1,8 +1,8 @@
 pkgbase = advantagescope
 	pkgdesc = robot diagnostics, log review/analysis, and data visualization application tool
-	pkgver = 4.1.5
+	pkgver = 4.1.6
 	pkgrel = 1
-	url = https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v4.1.5/advantagescope-linux-x64-v4.1.5.pacman
+	url = https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v4.1.6/advantagescope-linux-x64-v4.1.6.pacman
 	arch = x86_64
 	license = MIT
 	makedepends = curl
@@ -38,7 +38,7 @@ pkgbase = advantagescope
 	provides = libvk_swiftshader.so
 	provides = libvulkan.so
 	conflicts = advantagescope-git
-	source = https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v4.1.5/advantagescope-linux-x64-v4.1.5.pacman
+	source = https://github.com/Mechanical-Advantage/AdvantageScope/releases/download/v4.1.6/advantagescope-linux-x64-v4.1.6.pacman
 	sha256sums = SKIP
 
 pkgname = advantagescope
